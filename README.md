@@ -51,5 +51,37 @@ QA_CL_SPN_Project/
 ├── docs/
 │   ├── citation.txt
 │   └── methodology_summary.pdf
+\📄 README Section (Add This to Existing README.md)
+🔬 Quantum Tensor Sampling & Analysis
+
+    quantum_aware_tensor_sampling.m: Prepares a 32-image tensor (batch-wise or spatial) from local files, adapted for lattice-based quantum-aware processing.
+
+    qa_encryption_analysis.m: Computes:
+
+        NPCR (Number of Pixels Change Rate)
+
+        UACI (Unified Average Changing Intensity)
+
+        CCA (Correlation Coefficient Analysis) along horizontal, vertical, and diagonal directions, separately for RGB channels (3D plot)
+
+        SSIM, PSNR for robustness analysis
+
+        Pixel distribution plots for original vs. encrypted images (RGB histogram)
+
+Output figures and metrics are saved in the results/ folder.
+📌 Summary qa_encryption_analysis.m 
+  qa_encryption_analysis.m includes:
+
+    - Loop over 32 original and encrypted image pairs
+
+    - Compute NPCR & UACI for each pair
+
+    - Compute correlation coefficients per direction and channel
+
+    - Generate histograms
+
+    - Plot SSIM, PSNR scores
+
+    - Save plots to results
 
 
